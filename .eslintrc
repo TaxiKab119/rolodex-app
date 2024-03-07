@@ -1,0 +1,12 @@
+{
+  "parser": "@typescript-eslint/parser", // Specifies the ESLint parser for TypeScript
+  "extends": [
+    "plugin:@shopify/eslint-plugin/react", // Use Shopify's ESLint rules for React
+    "plugin:@shopify/eslint-plugin/typescript" // Use Shopify's ESLint rules for TypeScript
+    // No additional rules are specified here
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest", // Allows for the parsing of modern ECMAScript features
+    "sourceType": "module" // Allows for the use of imports
+  }
+}

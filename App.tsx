@@ -81,24 +81,25 @@ export default function App() {
   return (
     <>
       {/* eslint-disable-next-line react/style-prop-object */}
-        <StatusBar style="auto"/>
-        <NavigationContainer>
-          <Stack.Navigator>
-            <Stack.Screen
-              name={'BottomNavScreens'}
-              component={BottomNavScreens}
-              options={{headerShown: false}} // don't want header when bottom tabs are also giving one
-            />
-            <Stack.Screen
-              name={'ManageCustomer'}
-              component={ManageCustomer}
-              options={{
-                presentation: 'modal' // changes the effect when navigating to screen
-
-              }}
-            />
-          </Stack.Navigator>
-        </NavigationContainer>
+      <StatusBar style="auto"/>
+      <NavigationContainer>
+        <Stack.Navigator screenOptions={{
+          headerShown: false
+        }}>
+          <Stack.Screen
+            name={'BottomNavScreens'}
+            component={BottomNavScreens}
+          />
+          <Stack.Screen
+            name={'ManageCustomer'}
+            //@ts-ignore - not sure how to fix this yet?
+            component={ManageCustomer}
+            options={{
+              presentation: 'modal' // changes the effect when navigating to screen
+            }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
     </>
   );
 }

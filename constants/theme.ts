@@ -43,13 +43,11 @@ export const GlobalStyles = {
       fontSize: 16,
       lineHeight: 24,
       fontFamily: 'System',
-      fontWeight: '400',
     },
     heading: {
       fontSize: 24,
       lineHeight: 32,
       fontFamily: 'System',
-      fontWeight: '600',
     },
   },
   borderRadius: {
